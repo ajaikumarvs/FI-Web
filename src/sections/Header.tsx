@@ -1,13 +1,17 @@
+import LogoIcon from '@/assets/logo-black.svg';
+import MenuIcon from '@/assets/menu-icon.svg';
+
+
 export const Header = () => {
     return (
-    <header>
+    <header className="py-4">
         <div className="container">
-            <div>
+            <div className="flex justify-between">
                 <div>
-                    <span>logo</span>
-                    <div>
+                    <LogoIcon className="h-8 w-8"/>
+                    <div className="flex gap-4 items-center">
                         <button>Join waitlist</button>
-                        <span>menu</span>
+                        <MenuIcon/>
                     </div>
                 </div>
             </div>
